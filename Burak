@@ -1,0 +1,78 @@
+void setup () {
+  size(500,500);
+}
+void draw(){
+  background(#DAF58D);
+ // Neck
+  noStroke();
+  fill(#9CA091);
+  rect(195,200,10,60);
+  // head
+ ellipse(200,200,60,80);
+ //head down
+ rect(170,200,60,40);
+ //body
+ fill(#9CA091);
+ rect(160,250,80,110);
+
+ //left eye
+ fill(#20211B); 
+  ellipse(180,190,10,15);
+  //right eye
+  ellipse(220,190,10,15);
+  // inside of eyes
+  fill(#FF0825);
+ellipse(220,190,5,5);
+ellipse(180,190,5,5);
+//burun
+fill(#D62528);
+rect(197,200,7,7);
+
+// smiling
+noFill();
+stroke(3);
+strokeWeight(4);
+arc(200, 210, 30, 30, 0, PI);
+arc(200, 212, 30, 40, 0, PI);
+
+//ayaklar
+noStroke();
+fill(#A09B9B);
+rect(208,380,15,90);
+rect(180,380,15,90);
+fill(#F7070C);
+rect(203,470,25,10);
+rect(175,470,25,10);
+
+ // bel bolgesi
+ fill(#050505);
+arc(200,350,80,80,0, PI);
+
+//omuzlar
+fill(#050505);
+arc(240,290,80,80,radians(270),radians(360));
+arc(160,290,80,80,radians(180),radians(270));
+
+//arms
+noFill();
+stroke(6);
+strokeWeight(12);
+//siteden aldim - right hand
+arc(185, 305, 170, 170, -PI / 6, PI / 6); // 60 degrees
+// left hand
+arc(65, 310, 170, 170,-PI / 6, PI / 6 );
+// hands
+arc(260, 355, 17, 17, -PI ,0);
+arc(140, 360, 17, 17, -PI ,0);
+
+//body textures
+stroke(2);
+strokeWeight(3);
+fill(#F7070C);
+rect(170,260,20,20);
+rect(210,260,20,20);
+ //screen on body
+ fill(#C19A9B);
+ rect(174,295,50,40);
+ // antenler
+ //line(250,185,200,190);
